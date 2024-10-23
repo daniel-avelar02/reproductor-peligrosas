@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    line-height: 1;
+    background-color: #f4f4f4;
+  }
+  
+  button {
+    font-family: DM Sans, sans-serif;
+    background-color: #0b68cc; /* Color de fondo azul */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado interno */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
+    margin-top: 15px; /* Margen superior */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .container {
+    margin: 40px;
+    min-height: calc(100vh - 80px); /* Ajusta este valor según la altura de tu header y footer */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #f4f4f4;
+    background-color: #0056b3;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #f4f4f4;
+    padding: 8px 12px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #e0f0ff;
+    color: #0056b3;
+  }
+  
+  footer {
+    background: #282c34; /* Fondo del footer */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    padding: 10px; /* Espaciado */
+    position: relative; /* Cambiar a relative */
+    bottom: 0; /* Fijar al fondo */
+    width: 100%; /* Ancho completo */
+  }
+  
+  .music-list {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para móviles */
+    padding: 20px;
+  }
+  
+  .music-item {
+    background: white;
+    margin: 10px 0; /* Margen vertical */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Ancho completo */
+  }
+  
+  .music-player {
+    background-color: #c4c0c0;
+    color: #282c34;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  .controls {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+  }
+  
+  button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #21a1f1;
+  }
+  
+  audio {
+    width: 100%; /* Ancho completo para audio */
+    margin-top: 10px;
+  }
+  
+  .contact-form-container {
+    background-color: white; /* Fondo blanco para el formulario */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px auto; /* Margen automático para centrarlo */
+    width: 90%; /* Ancho del contenedor */
+    max-width: 500px; /* Ancho máximo */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+  }
+  
+  .contact-form-container h2 {
+    text-align: center; /* Centramos el título */
+    margin-bottom: 20px; /* Espaciado inferior */
+  }
+  
+  .contact-form-container input,
+  .contact-form-container textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    margin: 10px 0; /* Margen superior e inferior */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    transition: border 0.3s; /* Transición suave para el borde */
+  }
+  
+  .contact-form-container input:focus,
+  .contact-form-container textarea:focus {
+    border-color: #007bff; /* Color del borde al enfocar */
+    outline: none; /* Sin contorno */
+  }
+  
+  .contact-form-container button {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    padding: 10px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    width: 100%; /* Ancho completo */
+    transition: background-color 0.3s; /* Transición suave para el fondo */
+  }
+  
+  .contact-form-container button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+  }
+  
+  .music-player {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .music-player audio {
+    width: 100%; /* Ajusta el ancho del reproductor */
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  /* Media Queries para Responsividad */
+  @media (max-width: 768px) {
+    .container {
+      margin: 10px; /* Reduce el margen para móviles */
+    }
+  
+    header {
+      flex-direction: column; /* Apilar en móviles */
+      align-items: flex-start; /* Alinear a la izquierda */
+    }
+  
+    nav {
+      flex-direction: column; /* Apilar los enlaces de navegación */
+    }
+  
+    nav a {
+      padding: 10px; /* Mayor área de clic */
+      width: 100%; /* Ancho completo para enlaces */
+      text-align: center; /* Centrar texto en móviles */
+    }
+  
+    .music-list {
+      padding: 10px; /* Reduce el padding */
+    }
+  
+    .music-item {
+      width: 95%; /* Aumentar ancho en móviles */
+    }
+  
+    .contact-form-container {
+      width: 95%; /* Mayor ancho en móviles */
+    }
+  }
+  
