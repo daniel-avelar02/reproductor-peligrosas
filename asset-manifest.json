@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/reproductor-peligrosas/static/css/main.fbd094c8.css",
-    "main.js": "/reproductor-peligrosas/static/js/main.10934adb.js",
+    "main.js": "/reproductor-peligrosas/static/js/main.cafb09a4.js",
     "index.html": "/reproductor-peligrosas/index.html",
     "main.fbd094c8.css.map": "/reproductor-peligrosas/static/css/main.fbd094c8.css.map",
-    "main.10934adb.js.map": "/reproductor-peligrosas/static/js/main.10934adb.js.map"
+    "main.cafb09a4.js.map": "/reproductor-peligrosas/static/js/main.cafb09a4.js.map"
   },
   "entrypoints": [
     "static/css/main.fbd094c8.css",
-    "static/js/main.10934adb.js"
+    "static/js/main.cafb09a4.js"
   ]
 }
