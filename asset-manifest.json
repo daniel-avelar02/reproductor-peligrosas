@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/reproductor-peligrosas/static/css/main.fbd094c8.css",
+    "main.js": "/reproductor-peligrosas/static/js/main.10934adb.js",
+    "index.html": "/reproductor-peligrosas/index.html",
+    "main.fbd094c8.css.map": "/reproductor-peligrosas/static/css/main.fbd094c8.css.map",
+    "main.10934adb.js.map": "/reproductor-peligrosas/static/js/main.10934adb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fbd094c8.css",
+    "static/js/main.10934adb.js"
+  ]
+}
